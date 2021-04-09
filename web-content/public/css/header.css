@@ -1,0 +1,52 @@
+.header-container {
+  margin-bottom: 10px;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fastify-title {
+  text-decoration: none;
+  color: #000000;
+}
+
+.fastify-logo {
+  height: 50px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+}
+
+.menu-items {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-items:hover, .menu-items:active {
+  color: #7B808E;
+}
+
+@media screen and (max-width: 668px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    flex-direction: column-reverse;
+  }
+
+  .fastify-title {
+    text-align: center;
+    font-size: 14px;
+  }
+}

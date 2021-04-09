@@ -1,0 +1,12 @@
+<div class="find-by-form-container">
+    <form class="find-by-form" action="/brands/brand/find" method="post">
+        <h4>FIND BY BRAND</h4>
+        <label for="brand">Search</label>
+        <input class="find-by-form-input" id="brand" type="text" name="brand">
+        <input type="submit">
+    </form>
+    <hr>
+    <div class="find-by-form-results">
+        {{>brands parameter=brands}}
+    </div>
+</div>

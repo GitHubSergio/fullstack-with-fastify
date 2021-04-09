@@ -1,0 +1,16 @@
+.cars-item-container {
+  margin: 20px 10px;
+}
+
+.cars-item-title {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.cars-item-row-one, .cars-item-row-three {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.cars-item-row-two {}

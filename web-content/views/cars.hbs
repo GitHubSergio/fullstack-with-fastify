@@ -1,0 +1,50 @@
+<div>
+    {{#if cars}}
+        {{#each cars}}
+            <div class="cars-item-row-one">
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Model:</span>
+                    <div>{{model}}</div>
+                </div>
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Brand:</span>
+                    <div>{{brand}}</div>
+                </div>
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Miles:</span>
+                    <div>{{miles}}</div>
+                </div>
+            </div>
+
+            <div class="cars-item-row-two">
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Description:</span>
+                    <div>{{description}}</div>
+                </div>
+            </div>
+
+            <div class="cars-item-row-three">
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Gear:</span>
+                    <div>{{overview.gearbox}}</div>
+                </div>
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Doors:</span>
+                    <div>{{overview.doors}}</div>
+                </div>
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Fuel:</span>
+                    <div>{{overview.fuel}}</div>
+                </div>
+                <div class="cars-item-container">
+                    <span class="cars-item-title">Seats:</span>
+                    <div>{{overview.seats}}</div>
+                </div>
+            </div>
+
+            <hr>
+        {{/each}}
+    {{else}}
+        <h3>No cars found</h3>
+    {{/if}}
+</div>

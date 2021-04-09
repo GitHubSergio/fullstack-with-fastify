@@ -1,0 +1,31 @@
+<div>
+    {{#if brands}}
+        {{#each brands}}
+            <div class="brands-items-container">
+                <div class="brands-item">
+                    <span class="brands-item-title">Brand</span>
+                    <div>{{brand}}</div>
+                </div>
+                <div class="brands-item">
+                    <span class="brands-item-title">Description</span>
+                    <div>{{description}}</div>
+                </div>
+                <div>
+                    <span class="brands-item-title">Number of models</span>
+                    <div>{{number_of_models}}</div>
+                </div>
+                <div class="buttons-container">
+                    <div class="button">
+                        <button onclick="delBrand('{{id}}')">Delete</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="location.href = ">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        {{/each}}
+    {{else}}
+        <h3>No brands found</h3>
+    {{/if}}
+</div>
